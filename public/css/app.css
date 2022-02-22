@@ -10962,3 +10962,122 @@ a.text-dark:focus {
   }
 }
 
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+main {
+  color: #3490dc;
+}
+
+main .main-index h2 {
+  margin: 30px 0;
+  text-transform: uppercase;
+}
+
+main .main-index .posts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .main-index .posts .single-post {
+  width: calc(33.3333333333% - 40px);
+  margin: 20px 20px;
+  border: 1px solid #3490dc;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+main .main-index .posts .single-post a {
+  text-decoration: none;
+}
+
+main .main-index .posts .single-post a .post-title {
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+main .main-show .post-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+
+main .main-show .post-slug {
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+
+main .main-show .post-description {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+main .main-show .edit-button {
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+main .main-show .edit-button a {
+  border: 1px solid;
+  padding: 8px;
+  text-decoration: none;
+}
+
+main .main-show .delete-button button {
+  padding: 8px;
+  font-size: 18px;
+}
+
+main .main-create h2 {
+  text-transform: uppercase;
+  margin: 50px 0;
+}
+
+main .main-create form {
+  display: flex;
+  flex-direction: column;
+}
+
+main .main-create form label {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+main .main-create form input {
+  margin-bottom: 20px;
+  height: 50px;
+}
+
+main .main-create form textarea {
+  margin-bottom: 20px;
+}
+
+main .main-edit h2 {
+  text-transform: uppercase;
+  margin: 50px 0;
+}
+
+main .main-edit form {
+  display: flex;
+  flex-direction: column;
+}
+
+main .main-edit form label {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+main .main-edit form input {
+  margin-bottom: 20px;
+  height: 50px;
+}
+
+main .main-edit form textarea {
+  margin-bottom: 20px;
+}
+

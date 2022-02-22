@@ -1,0 +1,131 @@
+main{
+    color: #3490dc;
+
+    .main-index{
+
+        h2{
+            margin: 30px 0;
+            text-transform: uppercase;
+        }
+
+        .posts{
+            display: flex;
+            flex-wrap: wrap;
+
+            .single-post{
+                width: calc((100% / 3) - 40px);
+                margin: 20px 20px;
+                border: 1px solid #3490dc;
+                border-radius: 10px;
+                padding: 10px;
+    
+                a{
+                    text-decoration: none;
+    
+                    .post-title{
+                        font-weight: 700;
+                        font-size: 25px;
+                        margin-bottom: 15px;
+                    }
+    
+                    // .post-description{
+                        
+                    // }
+                }
+            }
+        }
+    }
+
+    .main-show{
+
+        .post-title{
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding-bottom: 15px;
+        }
+
+        .post-slug{
+            font-size: 15px;
+            padding-bottom: 15px;
+        }
+
+        .post-description{
+            font-size: 20px;
+            padding-bottom: 15px;
+        }
+
+        .edit-button{
+            font-size: 18px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            
+            a{
+                border: 1px solid;
+                padding: 8px;
+                text-decoration: none;
+            }
+        }
+
+        .delete-button{
+
+            button{
+                padding: 8px;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .main-create{
+
+        h2{
+            text-transform: uppercase;
+            margin: 50px 0;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+
+            label{
+                margin-bottom: 20px;
+                font-size: 20px;
+            }
+
+            input{
+                margin-bottom: 20px;
+                height: 50px;
+            }
+
+            textarea{
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .main-edit{
+        h2{
+            text-transform: uppercase;
+            margin: 50px 0;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+
+            label{
+                margin-bottom: 20px;
+                font-size: 20px;
+            }
+
+            input{
+                margin-bottom: 20px;
+                height: 50px;
+            }
+
+            textarea{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
