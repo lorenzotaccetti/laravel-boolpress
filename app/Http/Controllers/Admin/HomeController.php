@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\UserInfo;
 
 class HomeController extends Controller
 {
@@ -13,7 +14,8 @@ class HomeController extends Controller
         $user = Auth::user();
 
         $data = [
-            'user' => $user
+            'user' => $user,
+            'user_info' => $user->UserInfo,
         ];
 
         return view ('admin.home', $data);
