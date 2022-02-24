@@ -11074,7 +11074,8 @@ main .main-edit form label {
   font-size: 20px;
 }
 
-main .main-edit form input {
+main .main-edit form input,
+main .main-edit form select {
   margin-bottom: 20px;
   height: 50px;
 }
