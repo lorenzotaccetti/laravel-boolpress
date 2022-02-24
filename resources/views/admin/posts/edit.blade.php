@@ -25,6 +25,16 @@
             </label>
             <input type="text" name="title" id="title" value="{{old('title', $post->title)}}">
 
+            <label for="category_id">Aggiorna la categoria</label>
+            <select name="category_id" id="category_id">
+                <option value="">Nessuna</option>
+                @foreach ($categories as $category)
+                    <option value="{{$category->id}}" {{ old('category_id', $post->category_id) == $category->id ? 'selected' : '' }}>
+                        {{$category->name}}
+                    </option>
+                @endforeach
+            </select>
+
             <label for="description">
                 Aggiorna la descrizione
             </label>
