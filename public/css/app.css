@@ -11006,7 +11006,8 @@ main .main-show .post-title {
   padding-bottom: 15px;
 }
 
-main .main-show .post-slug {
+main .main-show .post-slug,
+main .main-show .post-category {
   font-size: 15px;
   padding-bottom: 15px;
 }
@@ -11048,7 +11049,8 @@ main .main-create form label {
   font-size: 20px;
 }
 
-main .main-create form input {
+main .main-create form input,
+main .main-create form select {
   margin-bottom: 20px;
   height: 50px;
 }

@@ -8,6 +8,9 @@
         <div class="post-slug">
             {{$post->slug}}
         </div>
+        <div class="post-category">
+            Categoria: {{$post->category ? $post->category->name : 'nessuna'}}
+        </div>
         <div class="post-description">
             {{$post->description}}
         </div>

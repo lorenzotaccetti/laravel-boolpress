@@ -25,6 +25,14 @@
             </label>
             <input type="text" name="title" id="title" value="{{old('title')}}">
 
+            <label for="category_id">Categoria</label>
+            <select name="category_id" id="category_id">
+                <option value="">Nessuna</option>
+                @foreach ($categories as $category)
+                    <option value="{{$category->id}}" {{ old('category_id') == $category->id ? 'selected' : ''}}>{{$category->name}}</option>
+                @endforeach
+            </select>
+
             <label for="description">
                 Descrizione del post
             </label>

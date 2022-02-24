@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Post;
 use Illuminate\Support\Str;
+use App\Category;
 
 class PostController extends Controller
 {
@@ -28,7 +29,9 @@ class PostController extends Controller
      */
     public function create()
     {
-        return view('admin.posts.create');
+        $categories = Category::all();
+
+        return view('admin.posts.create', compact('categories'));
     }
 
     /**
@@ -122,7 +125,8 @@ class PostController extends Controller
     {
        return [
         'title' => 'required|min:3|max:255',
-        'description' => 'required|min:4|max:60000'
+        'description' => 'required|min:4|max:60000',
+        'category_id' => 'exists:categories,id|nullable'
        ];
     }
 
