@@ -94,7 +94,7 @@ main{
 
             input, select{
                 margin-bottom: 20px;
-                // height: 50px;
+                padding: 10px;
             }
 
             .tags{
@@ -134,7 +134,21 @@ main{
 
             input, select{
                 margin-bottom: 20px;
-                height: 50px;
+                padding: 10px;
+            }
+
+            .tags{
+                font-size: 22px;
+            }
+
+            .tags-area{
+                margin-bottom: 20px;
+
+                .check{
+                    padding-right: 10px;
+                    margin-bottom: 0;
+                    color: black;
+                }
             }
 
             textarea{

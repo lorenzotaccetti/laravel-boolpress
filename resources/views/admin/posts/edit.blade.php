@@ -35,6 +35,39 @@
                 @endforeach
             </select>
 
+            <div class="tags">
+                Tags
+            </div>
+            <div class="tags-area">
+                @foreach($tags as $tag)
+
+                    @if ($errors->any())
+                        <input
+                        {{in_array($tag->id, old('tags', [])) ? 'checked' : ''}} 
+                        class="check"
+                        type="checkbox" 
+                        name="tags[]" 
+                        value="{{$tag->id}}" 
+                        id="tag-{{$tag->id}}">
+                        <label class="check" for="tag-{{$tag->id}}">
+                            {{$tag->name}}
+                        </label>
+                    @else
+                        <input
+                        {{$post->tags->contains($tag) ? 'checked' : ''}} 
+                        class="check"
+                        type="checkbox" 
+                        name="tags[]" 
+                        value="{{$tag->id}}" 
+                        id="tag-{{$tag->id}}">
+                        <label class="check" for="tag-{{$tag->id}}">
+                            {{$tag->name}}
+                        </label>
+                    @endif
+                    
+                @endforeach
+            </div>
+
             <label for="description">
                 Aggiorna la descrizione
             </label>

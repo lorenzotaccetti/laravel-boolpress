@@ -92,9 +92,12 @@ class PostController extends Controller
 
         $categories = Category::all();
 
+        $tags = Tag::all();
+
         $data = [
             'post' => $post,
-            'categories' => $categories
+            'categories' => $categories,
+            'tags' => $tags
         ]; 
 
         return view ('admin.posts.edit', $data);
@@ -121,6 +124,12 @@ class PostController extends Controller
         }
 
         $update_post->update($form_data);
+
+        if(isset($form_data['tags'])) {
+            $update_post->tags()->sync($form_data['tags']);
+        } else {
+            $update_post->tags()->sync([]);
+        }
 
         return redirect()->route('admin.posts.show', ['post' => $update_post->id]);
     }
