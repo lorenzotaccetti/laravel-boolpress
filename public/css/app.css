@@ -11052,7 +11052,20 @@ main .main-create form label {
 main .main-create form input,
 main .main-create form select {
   margin-bottom: 20px;
-  height: 50px;
+}
+
+main .main-create form .tags {
+  font-size: 22px;
+}
+
+main .main-create form .tags-area {
+  margin-bottom: 20px;
+}
+
+main .main-create form .tags-area .check {
+  padding-right: 10px;
+  margin-bottom: 0;
+  color: black;
 }
 
 main .main-create form textarea {

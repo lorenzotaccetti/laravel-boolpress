@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Post;
 use Illuminate\Support\Str;
 use App\Category;
+use App\Tag;
 
 class PostController extends Controller
 {
@@ -31,7 +32,14 @@ class PostController extends Controller
     {
         $categories = Category::all();
 
-        return view('admin.posts.create', compact('categories'));
+        $tags = Tag::all();
+
+        $data = [
+            'categories' => $categories,
+            'tags' => $tags
+        ];
+
+        return view('admin.posts.create', $data);
     }
 
     /**
@@ -51,6 +59,10 @@ class PostController extends Controller
         $new_post->fill($form_data);
         $new_post->slug = $this->getUniqueSlugFromTitle($new_post->title);
         $new_post->save();
+
+        if (isset($form_data['tags'])) {
+            $new_post->tags()->sync($form_data['tags']);
+        }
 
         return redirect()->route('admin.posts.show', ['post' => $new_post->id]);
     }
@@ -122,7 +134,7 @@ class PostController extends Controller
     public function destroy($id)
     {
         $post_to_delete = Post::findOrFail($id);
-
+        $post_to_delete->tags()->sync([]);
         $post_to_delete->delete();
 
         return redirect()->route('admin.posts.index');
@@ -133,7 +145,8 @@ class PostController extends Controller
        return [
         'title' => 'required|min:3|max:255',
         'description' => 'required|min:4|max:60000',
-        'category_id' => 'exists:categories,id|nullable'
+        'category_id' => 'exists:categories,id|nullable',
+        'tags' => 'exists:tags,id'
        ];
     }
 
