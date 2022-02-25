@@ -11,6 +11,14 @@
         <div class="post-category">
             Categoria: {{$post->category ? $post->category->name : 'nessuna'}}
         </div>
+        <div class="post-tag">
+            Tag:
+            @forelse ($post->tags as $tag)
+                {{$tag->name}}{{$loop->last ? '' : ', '}}
+            @empty
+                Nessuno
+            @endforelse
+        </div>
         <div class="post-description">
             {{$post->description}}
         </div>
