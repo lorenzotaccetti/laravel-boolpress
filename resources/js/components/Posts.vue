@@ -10,7 +10,7 @@
                     {{post.title}}
                 </div>
                 <div class="post-description">
-                    {{post.description}}
+                    {{truncateText(post.description, 110)}}
                 </div>
             </div>
         </div>
@@ -33,7 +33,14 @@
                 .then((response) => {
                     this.posts = response.data.posts;
                 });
-            }
+            },
+            truncateText: function(text, maxNumber){
+                if (text.length > maxNumber) {
+                    return text.substr(0, maxNumber) + '...';
+                }
+
+                return text;
+            },
         },
         created: function(){
             this.apiPosts();
@@ -60,11 +67,7 @@
                 width: calc((100% / 4) - 40px);
                 margin: 20px;
                 padding: 15px;
-                // border: 1px solid;
-                // border-radius: 10px;
                 cursor: pointer;
-                height: 200px;
-                overflow-y: auto;
 
                 .post-title{
                     color: #9561e2;

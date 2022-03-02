@@ -1942,6 +1942,13 @@ __webpack_require__.r(__webpack_exports__);
       ).then(function (response) {
         _this.posts = response.data.posts;
       });
+    },
+    truncateText: function truncateText(text, maxNumber) {
+      if (text.length > maxNumber) {
+        return text.substr(0, maxNumber) + '...';
+      }
+
+      return text;
     }
   },
   created: function created() {
@@ -1989,7 +1996,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".posts[data-v-4ac4d2f8] {\n  width: 80%;\n  margin: 40px auto;\n  font-size: 20px;\n}\n.posts .title[data-v-4ac4d2f8] {\n  font-size: 35px;\n  text-transform: uppercase;\n}\n.posts .posts-container[data-v-4ac4d2f8] {\n  display: flex;\n  flex-wrap: wrap;\n}\n.posts .posts-container .single-post[data-v-4ac4d2f8] {\n  width: calc(25% - 40px);\n  margin: 20px;\n  padding: 15px;\n  cursor: pointer;\n  height: 200px;\n  overflow-y: auto;\n}\n.posts .posts-container .single-post .post-title[data-v-4ac4d2f8] {\n  color: #9561e2;\n  font-size: 20px;\n  font-weight: 700;\n  padding-bottom: 20px;\n}\n.posts .posts-container .single-post .post-description[data-v-4ac4d2f8] {\n  font-size: 16px;\n}", ""]);
+exports.push([module.i, ".posts[data-v-4ac4d2f8] {\n  width: 80%;\n  margin: 40px auto;\n  font-size: 20px;\n}\n.posts .title[data-v-4ac4d2f8] {\n  font-size: 35px;\n  text-transform: uppercase;\n}\n.posts .posts-container[data-v-4ac4d2f8] {\n  display: flex;\n  flex-wrap: wrap;\n}\n.posts .posts-container .single-post[data-v-4ac4d2f8] {\n  width: calc(25% - 40px);\n  margin: 20px;\n  padding: 15px;\n  cursor: pointer;\n}\n.posts .posts-container .single-post .post-title[data-v-4ac4d2f8] {\n  color: #9561e2;\n  font-size: 20px;\n  font-weight: 700;\n  padding-bottom: 20px;\n}\n.posts .posts-container .single-post .post-description[data-v-4ac4d2f8] {\n  font-size: 16px;\n}", ""]);
 
 // exports
 
@@ -3123,7 +3130,9 @@ var render = function () {
           _vm._v(" "),
           _c("div", { staticClass: "post-description" }, [
             _vm._v(
-              "\n                " + _vm._s(post.description) + "\n            "
+              "\n                " +
+                _vm._s(_vm.truncateText(post.description, 110)) +
+                "\n            "
             ),
           ]),
         ])
