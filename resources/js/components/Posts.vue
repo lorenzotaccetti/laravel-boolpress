@@ -14,6 +14,25 @@
                 </div>
             </div>
         </div>
+
+        <nav>
+            <ul class="pagination">
+                <!-- Previous link -->
+                <li class="page-item" :class="{ 'disabled': currentPage == 1 }">
+                    <a @click="getPosts(currentPage - 1)" class="page-link" href="#">Previous</a>
+                </li>
+
+                <!-- Pages link -->
+                <li v-for="n in lastPage" :key="n" class="page-item" :class="{ 'actived': currentPage == n }">
+                    <a @click="apiPosts(n)" class="page-link" href="#">{{ n }}</a>
+                </li>
+
+                <!-- Next link -->
+                <li class="page-item" :class="{ 'disabled': currentPage == lastPage }">
+                    <a @click="apiPosts(currentPage + 1)" class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
     </div>
 </template>
 
@@ -23,15 +42,21 @@
         data: function(){
             return{
                 posts: [],
+                currentPage: 1,
+                lastPage: null
             };
         },
         methods: {
-            apiPosts: function(){
-                axios.get('/api/posts', 
-                // {params:{}
-                )
+            apiPosts: function(pageNumber){
+                axios.get('/api/posts', {
+                    params:{
+                        page: pageNumber
+                    }
+                })
                 .then((response) => {
-                    this.posts = response.data.posts;
+                    this.posts = response.data.posts.data;
+                    this.currentPage = response.data.posts.current_page;
+                    this.lastPage = response.data.posts.last_page;
                 });
             },
             truncateText: function(text, maxNumber){
@@ -80,6 +105,19 @@
                     font-size: 16px;
                 }
             }
+        }
+
+        nav{
+
+            ul{
+                list-style-type: none;
+                display: flex;
+
+                li{
+                    padding: 0 20px;
+                }
+            }
+
         }
     }
 </style>
