@@ -1,39 +1,44 @@
 <template>
-    <div class="posts">
-        <div class="title">
-            I nostri Post
-        </div>
+    <div class="post-page">
+        <div class="posts">
+            <div class="title">
+                I nostri Post
+                <span class="icon">
+                    <i class="fab fa-bitcoin"></i>
+                </span>
+            </div>
 
-        <div class="posts-container">
-            <div class="single-post" v-for="post in posts" :key="post.id">
-                <div class="post-title">
-                    {{post.title}}
-                </div>
-                <div class="post-description">
-                    {{truncateText(post.description, 110)}}
+            <div class="posts-container">
+                <div class="single-post" v-for="post in posts" :key="post.id">
+                    <div class="post-title">
+                        {{post.title}}
+                    </div>
+                    <div class="post-description">
+                        {{truncateText(post.description, 110)}}
+                    </div>
                 </div>
             </div>
+
+            <nav>
+                <ul class="pagination">
+                    <!-- Previous link -->
+                    <li class="page-item" :class="{ 'disabled': currentPage == 1 }">
+                        <a @click="getPosts(currentPage - 1)" class="page-link" href="#">Previous</a>
+                    </li>
+
+                    <!-- Pages link -->
+                    <li v-for="n in lastPage" :key="n" class="page-item" :class="{ 'actived': currentPage == n }">
+                        <a @click="apiPosts(n)" class="page-link" href="#">{{ n }}</a>
+                    </li>
+
+                    <!-- Next link -->
+                    <li class="page-item" :class="{ 'disabled': currentPage == lastPage }">
+                        <a @click="apiPosts(currentPage + 1)" class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-
-        <nav>
-            <ul class="pagination">
-                <!-- Previous link -->
-                <li class="page-item" :class="{ 'disabled': currentPage == 1 }">
-                    <a @click="getPosts(currentPage - 1)" class="page-link" href="#">Previous</a>
-                </li>
-
-                <!-- Pages link -->
-                <li v-for="n in lastPage" :key="n" class="page-item" :class="{ 'actived': currentPage == n }">
-                    <a @click="apiPosts(n)" class="page-link" href="#">{{ n }}</a>
-                </li>
-
-                <!-- Next link -->
-                <li class="page-item" :class="{ 'disabled': currentPage == lastPage }">
-                    <a @click="apiPosts(currentPage + 1)" class="page-link" href="#">Next</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+    </div>    
 </template>
 
 <script>
@@ -74,14 +79,25 @@
 </script>
 
 <style lang="scss" scoped>
+.post-page{
+color: #4f5a64;
+height: calc(100% - 160px);
+background-color: #f2f5fb;
+
     .posts{
         width: 80%;
-        margin: 40px auto;
+        padding: 20px 0;
+        margin: auto;
         font-size: 20px;
 
         .title{
             font-size: 35px;
-            text-transform: uppercase;
+            padding: 20px 0;
+            text-align: center;
+
+            .icon{
+                color: #6c30bb;
+            }
         }
 
         .posts-container{
@@ -89,16 +105,20 @@
             flex-wrap: wrap;
 
             .single-post{
-                width: calc((100% / 4) - 40px);
+                width: calc((100% / 2) - 40px);
                 margin: 20px;
-                padding: 15px;
+                padding: 25px;
                 cursor: pointer;
+                border: 1px solid #4f5a64;
+                border-radius: 10px;
+                background-color: white;
 
                 .post-title{
-                    color: #9561e2;
-                    font-size: 20px;
+                    color: #6c30bb;
+                    font-size: 22px;
                     font-weight: 700;
                     padding-bottom: 20px;
+                    text-transform: uppercase;
                 }
 
                 .post-description{
@@ -108,6 +128,7 @@
         }
 
         nav{
+            margin: 40px 0;
 
             ul{
                 list-style-type: none;
@@ -115,9 +136,15 @@
 
                 li{
                     padding: 0 20px;
+
+                    a{
+                        color: #6c30bb;
+                        // background-color: #f2f5fb;
+                    }
                 }
             }
 
         }
     }
+}    
 </style>
