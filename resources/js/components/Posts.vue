@@ -20,9 +20,9 @@
                         {{truncateText(post.description, 110)}}
                     </div>
                     <div class="link">
-                        <a href="">
+                        <router-link class="link-to" :to="{name: 'show', params: {slug: post.slug}}">
                             Scopri il piatto
-                        </a>
+                        </router-link>
                     </div>
                 </div>
             </div>
@@ -140,7 +140,8 @@ background-color: #f2f5fb;
                 }
 
                 .link{
-                    a{
+                    
+                    .link-to{
                         color: white;
                         text-decoration: none;
                         text-transform: uppercase;
