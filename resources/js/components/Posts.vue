@@ -4,17 +4,25 @@
             <div class="title">
                 I nostri Post
                 <span class="icon">
-                    <i class="fab fa-bitcoin"></i>
+                    <i class="fas fa-fan"></i>
                 </span>
             </div>
 
             <div class="posts-container">
                 <div class="single-post" v-for="post in posts" :key="post.id">
                     <div class="post-title">
+                        <span class="icon">
+                            <i class="fab fa-envira"></i>
+                        </span>
                         {{post.title}}
                     </div>
                     <div class="post-description">
                         {{truncateText(post.description, 110)}}
+                    </div>
+                    <div class="link">
+                        <a href="">
+                            Scopri il piatto
+                        </a>
                     </div>
                 </div>
             </div>
@@ -94,8 +102,10 @@ background-color: #f2f5fb;
             font-size: 35px;
             padding: 20px 0;
             text-align: center;
+            font-style: italic;
 
             .icon{
+                padding-left: 5px;
                 color: #6c30bb;
             }
         }
@@ -108,7 +118,6 @@ background-color: #f2f5fb;
                 width: calc((100% / 2) - 40px);
                 margin: 20px;
                 padding: 25px;
-                cursor: pointer;
                 border: 1px solid #4f5a64;
                 border-radius: 10px;
                 background-color: white;
@@ -119,10 +128,27 @@ background-color: #f2f5fb;
                     font-weight: 700;
                     padding-bottom: 20px;
                     text-transform: uppercase;
+
+                    .icon{
+                        padding-right: 5px;
+                    }
                 }
 
                 .post-description{
                     font-size: 16px;
+                    padding-bottom: 20px;
+                }
+
+                .link{
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        background-color: #8d42eb;
+                        border-radius: 10px;
+                        padding: 5px 10px;
+                    }
                 }
             }
         }

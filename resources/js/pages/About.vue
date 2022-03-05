@@ -81,6 +81,7 @@
             .title-about{
                 font-size: 35px;
                 margin-bottom: 20px;
+                font-style: italic;
 
                 .icon{
                     color:#6c30bb;

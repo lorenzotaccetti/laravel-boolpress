@@ -2042,6 +2042,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Posts',
   data: function data() {
@@ -2365,7 +2373,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".post-page[data-v-4ac4d2f8] {\n  color: #4f5a64;\n  height: calc(100% - 160px);\n  background-color: #f2f5fb;\n}\n.post-page .posts[data-v-4ac4d2f8] {\n  width: 80%;\n  padding: 20px 0;\n  margin: auto;\n  font-size: 20px;\n}\n.post-page .posts .title[data-v-4ac4d2f8] {\n  font-size: 35px;\n  padding: 20px 0;\n  text-align: center;\n}\n.post-page .posts .title .icon[data-v-4ac4d2f8] {\n  color: #6c30bb;\n}\n.post-page .posts .posts-container[data-v-4ac4d2f8] {\n  display: flex;\n  flex-wrap: wrap;\n}\n.post-page .posts .posts-container .single-post[data-v-4ac4d2f8] {\n  width: calc(50% - 40px);\n  margin: 20px;\n  padding: 25px;\n  cursor: pointer;\n  border: 1px solid #4f5a64;\n  border-radius: 10px;\n  background-color: white;\n}\n.post-page .posts .posts-container .single-post .post-title[data-v-4ac4d2f8] {\n  color: #6c30bb;\n  font-size: 22px;\n  font-weight: 700;\n  padding-bottom: 20px;\n  text-transform: uppercase;\n}\n.post-page .posts .posts-container .single-post .post-description[data-v-4ac4d2f8] {\n  font-size: 16px;\n}\n.post-page .posts nav[data-v-4ac4d2f8] {\n  margin: 40px 0;\n}\n.post-page .posts nav ul[data-v-4ac4d2f8] {\n  list-style-type: none;\n  display: flex;\n}\n.post-page .posts nav ul li[data-v-4ac4d2f8] {\n  padding: 0 20px;\n}\n.post-page .posts nav ul li a[data-v-4ac4d2f8] {\n  color: #6c30bb;\n}", ""]);
+exports.push([module.i, ".post-page[data-v-4ac4d2f8] {\n  color: #4f5a64;\n  height: calc(100% - 160px);\n  background-color: #f2f5fb;\n}\n.post-page .posts[data-v-4ac4d2f8] {\n  width: 80%;\n  padding: 20px 0;\n  margin: auto;\n  font-size: 20px;\n}\n.post-page .posts .title[data-v-4ac4d2f8] {\n  font-size: 35px;\n  padding: 20px 0;\n  text-align: center;\n  font-style: italic;\n}\n.post-page .posts .title .icon[data-v-4ac4d2f8] {\n  padding-left: 5px;\n  color: #6c30bb;\n}\n.post-page .posts .posts-container[data-v-4ac4d2f8] {\n  display: flex;\n  flex-wrap: wrap;\n}\n.post-page .posts .posts-container .single-post[data-v-4ac4d2f8] {\n  width: calc(50% - 40px);\n  margin: 20px;\n  padding: 25px;\n  border: 1px solid #4f5a64;\n  border-radius: 10px;\n  background-color: white;\n}\n.post-page .posts .posts-container .single-post .post-title[data-v-4ac4d2f8] {\n  color: #6c30bb;\n  font-size: 22px;\n  font-weight: 700;\n  padding-bottom: 20px;\n  text-transform: uppercase;\n}\n.post-page .posts .posts-container .single-post .post-title .icon[data-v-4ac4d2f8] {\n  padding-right: 5px;\n}\n.post-page .posts .posts-container .single-post .post-description[data-v-4ac4d2f8] {\n  font-size: 16px;\n  padding-bottom: 20px;\n}\n.post-page .posts .posts-container .single-post .link a[data-v-4ac4d2f8] {\n  color: white;\n  text-decoration: none;\n  text-transform: uppercase;\n  font-size: 12px;\n  background-color: #8d42eb;\n  border-radius: 10px;\n  padding: 5px 10px;\n}\n.post-page .posts nav[data-v-4ac4d2f8] {\n  margin: 40px 0;\n}\n.post-page .posts nav ul[data-v-4ac4d2f8] {\n  list-style-type: none;\n  display: flex;\n}\n.post-page .posts nav ul li[data-v-4ac4d2f8] {\n  padding: 0 20px;\n}\n.post-page .posts nav ul li a[data-v-4ac4d2f8] {\n  color: #6c30bb;\n}", ""]);
 
 // exports
 
@@ -2384,7 +2392,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".about[data-v-520b5d54] {\n  padding: 60px 0;\n  color: #4f5a64;\n  background-color: #f2f5fb;\n  width: 100%;\n  height: calc(100% - 160px);\n}\n.about .disposition[data-v-520b5d54] {\n  display: flex;\n}\n.about .disposition .left[data-v-520b5d54] {\n  width: calc(50% - 50px);\n  margin: 0 25px;\n}\n.about .disposition .left .title-about[data-v-520b5d54] {\n  font-size: 35px;\n  margin-bottom: 20px;\n}\n.about .disposition .left .title-about .icon[data-v-520b5d54] {\n  color: #6c30bb;\n}\n.about .disposition .left .description-about[data-v-520b5d54] {\n  font-size: 17px;\n  line-height: 2;\n}\n.about .disposition .right[data-v-520b5d54] {\n  margin: 0 25px;\n  width: calc(50% - 50px);\n}\n.about .disposition .right .title-right[data-v-520b5d54] {\n  font-size: 22px;\n  padding-bottom: 15px;\n}\n.about .disposition .right .card[data-v-520b5d54] {\n  border: 1px solid;\n  padding: 20px;\n  border-radius: 15px;\n  text-align: center;\n  margin-top: 20px;\n}\n.about .disposition .right .card .icon[data-v-520b5d54] {\n  font-size: 40px;\n  color: #6c30bb;\n}\n.about .disposition .right .card .name[data-v-520b5d54] {\n  font-size: 22px;\n  margin-bottom: 15px;\n  color: black;\n}", ""]);
+exports.push([module.i, ".about[data-v-520b5d54] {\n  padding: 60px 0;\n  color: #4f5a64;\n  background-color: #f2f5fb;\n  width: 100%;\n  height: calc(100% - 160px);\n}\n.about .disposition[data-v-520b5d54] {\n  display: flex;\n}\n.about .disposition .left[data-v-520b5d54] {\n  width: calc(50% - 50px);\n  margin: 0 25px;\n}\n.about .disposition .left .title-about[data-v-520b5d54] {\n  font-size: 35px;\n  margin-bottom: 20px;\n  font-style: italic;\n}\n.about .disposition .left .title-about .icon[data-v-520b5d54] {\n  color: #6c30bb;\n}\n.about .disposition .left .description-about[data-v-520b5d54] {\n  font-size: 17px;\n  line-height: 2;\n}\n.about .disposition .right[data-v-520b5d54] {\n  margin: 0 25px;\n  width: calc(50% - 50px);\n}\n.about .disposition .right .title-right[data-v-520b5d54] {\n  font-size: 22px;\n  padding-bottom: 15px;\n}\n.about .disposition .right .card[data-v-520b5d54] {\n  border: 1px solid;\n  padding: 20px;\n  border-radius: 15px;\n  text-align: center;\n  margin-top: 20px;\n}\n.about .disposition .right .card .icon[data-v-520b5d54] {\n  font-size: 40px;\n  color: #6c30bb;\n}\n.about .disposition .right .card .name[data-v-520b5d54] {\n  font-size: 22px;\n  margin-bottom: 15px;\n  color: black;\n}", ""]);
 
 // exports
 
@@ -3770,6 +3778,7 @@ var render = function () {
         _vm._l(_vm.posts, function (post) {
           return _c("div", { key: post.id, staticClass: "single-post" }, [
             _c("div", { staticClass: "post-title" }, [
+              _vm._m(1, true),
               _vm._v(
                 "\n                    " +
                   _vm._s(post.title) +
@@ -3784,6 +3793,8 @@ var render = function () {
                   "\n                "
               ),
             ]),
+            _vm._v(" "),
+            _vm._m(2, true),
           ])
         }),
         0
@@ -3880,7 +3891,27 @@ var staticRenderFns = [
     return _c("div", { staticClass: "title" }, [
       _vm._v("\n            I nostri Post\n            "),
       _c("span", { staticClass: "icon" }, [
-        _c("i", { staticClass: "fab fa-bitcoin" }),
+        _c("i", { staticClass: "fas fa-fan" }),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", { staticClass: "icon" }, [
+      _c("i", { staticClass: "fab fa-envira" }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "link" }, [
+      _c("a", { attrs: { href: "" } }, [
+        _vm._v(
+          "\n                        Scopri il piatto\n                    "
+        ),
       ]),
     ])
   },
