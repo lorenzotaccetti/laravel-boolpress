@@ -2,6 +2,9 @@
     <div class="show">
         <div class="container">
             <div class="post">
+                <div class="cover">
+                    <img :src="post.cover" :alt="post.title">
+                </div>
                 <div class="title">
                     {{post.title}}
                 </div>
@@ -71,13 +74,22 @@
     color: #4f5a64;
     height: calc(100% - 160px);
     text-align: center;
-    padding: 350px 0;
+    padding: 50px 0;
 
     .post{
         border: 1px solid #8d42eb;
         border-radius: 10px;
         background-color: white;
         padding: 30px 45px;
+
+        .cover{
+            padding-bottom: 20px;
+
+            img{
+                border-radius: 10px;
+                padding: 20px;
+            }
+        }
 
         .title{
             font-size: 45px;

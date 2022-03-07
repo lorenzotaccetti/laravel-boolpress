@@ -2050,6 +2050,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Posts',
   data: function data() {
@@ -2338,6 +2341,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Show',
   data: function data() {
@@ -2536,7 +2542,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".post-page[data-v-4ac4d2f8] {\n  color: #4f5a64;\n  height: calc(100% - 160px);\n  background-color: #f2f5fb;\n}\n.post-page .posts[data-v-4ac4d2f8] {\n  width: 80%;\n  padding: 20px 0;\n  margin: auto;\n  font-size: 20px;\n}\n.post-page .posts .title[data-v-4ac4d2f8] {\n  font-size: 35px;\n  padding: 20px 0;\n  text-align: center;\n  font-style: italic;\n}\n.post-page .posts .title .icon[data-v-4ac4d2f8] {\n  padding-left: 5px;\n  color: #6c30bb;\n}\n.post-page .posts .posts-container[data-v-4ac4d2f8] {\n  display: flex;\n  flex-wrap: wrap;\n}\n.post-page .posts .posts-container .single-post[data-v-4ac4d2f8] {\n  width: calc(50% - 40px);\n  margin: 20px;\n  padding: 25px;\n  border: 1px solid #4f5a64;\n  border-radius: 10px;\n  background-color: white;\n}\n.post-page .posts .posts-container .single-post .post-title[data-v-4ac4d2f8] {\n  color: #6c30bb;\n  font-size: 22px;\n  font-weight: 700;\n  padding-bottom: 20px;\n  text-transform: uppercase;\n}\n.post-page .posts .posts-container .single-post .post-title .icon[data-v-4ac4d2f8] {\n  padding-right: 5px;\n}\n.post-page .posts .posts-container .single-post .post-description[data-v-4ac4d2f8] {\n  font-size: 16px;\n  padding-bottom: 20px;\n}\n.post-page .posts .posts-container .single-post .link .link-to[data-v-4ac4d2f8] {\n  color: white;\n  text-decoration: none;\n  text-transform: uppercase;\n  font-size: 12px;\n  background-color: #8d42eb;\n  border-radius: 10px;\n  padding: 5px 10px;\n}\n.post-page .posts nav[data-v-4ac4d2f8] {\n  margin: 40px 0;\n}\n.post-page .posts nav ul[data-v-4ac4d2f8] {\n  list-style-type: none;\n  display: flex;\n}\n.post-page .posts nav ul li[data-v-4ac4d2f8] {\n  padding: 0 20px;\n}\n.post-page .posts nav ul li a[data-v-4ac4d2f8] {\n  color: #6c30bb;\n}", ""]);
+exports.push([module.i, ".post-page[data-v-4ac4d2f8] {\n  color: #4f5a64;\n  height: calc(100% - 160px);\n  background-color: #f2f5fb;\n}\n.post-page .posts[data-v-4ac4d2f8] {\n  width: 80%;\n  padding: 20px 0;\n  margin: auto;\n  font-size: 20px;\n}\n.post-page .posts .title[data-v-4ac4d2f8] {\n  font-size: 35px;\n  padding: 20px 0;\n  text-align: center;\n  font-style: italic;\n}\n.post-page .posts .title .icon[data-v-4ac4d2f8] {\n  padding-left: 5px;\n  color: #6c30bb;\n}\n.post-page .posts .posts-container[data-v-4ac4d2f8] {\n  display: flex;\n  flex-wrap: wrap;\n}\n.post-page .posts .posts-container .single-post[data-v-4ac4d2f8] {\n  width: calc(50% - 40px);\n  margin: 20px;\n  padding: 25px;\n  border: 1px solid #4f5a64;\n  border-radius: 10px;\n  background-color: white;\n}\n.post-page .posts .posts-container .single-post .post-title[data-v-4ac4d2f8] {\n  color: #6c30bb;\n  font-size: 22px;\n  font-weight: 700;\n  padding-bottom: 20px;\n  text-transform: uppercase;\n}\n.post-page .posts .posts-container .single-post .post-title .icon[data-v-4ac4d2f8] {\n  padding-right: 5px;\n}\n.post-page .posts .posts-container .single-post .post-description[data-v-4ac4d2f8] {\n  font-size: 16px;\n  padding-bottom: 20px;\n}\n.post-page .posts .posts-container .single-post .post-cover[data-v-4ac4d2f8] {\n  padding-bottom: 20px;\n}\n.post-page .posts .posts-container .single-post .post-cover img[data-v-4ac4d2f8] {\n  border-radius: 10px;\n}\n.post-page .posts .posts-container .single-post .link .link-to[data-v-4ac4d2f8] {\n  color: white;\n  text-decoration: none;\n  text-transform: uppercase;\n  font-size: 12px;\n  background-color: #8d42eb;\n  border-radius: 10px;\n  padding: 5px 10px;\n}\n.post-page .posts nav[data-v-4ac4d2f8] {\n  margin: 40px 0;\n}\n.post-page .posts nav ul[data-v-4ac4d2f8] {\n  list-style-type: none;\n  display: flex;\n}\n.post-page .posts nav ul li[data-v-4ac4d2f8] {\n  padding: 0 20px;\n}\n.post-page .posts nav ul li a[data-v-4ac4d2f8] {\n  color: #6c30bb;\n}", ""]);
 
 // exports
 
@@ -2593,7 +2599,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".show[data-v-a23480f4] {\n  background-color: #f2f5fb;\n  color: #4f5a64;\n  height: calc(100% - 160px);\n  text-align: center;\n  padding: 350px 0;\n}\n.show .post[data-v-a23480f4] {\n  border: 1px solid #8d42eb;\n  border-radius: 10px;\n  background-color: white;\n  padding: 30px 45px;\n}\n.show .post .title[data-v-a23480f4] {\n  font-size: 45px;\n  text-transform: uppercase;\n  padding-bottom: 20px;\n}\n.show .post .category[data-v-a23480f4] {\n  padding-bottom: 20px;\n  font-size: 20px;\n}\n.show .post .category .icon[data-v-a23480f4] {\n  color: #8d42eb;\n}\n.show .post .tags[data-v-a23480f4] {\n  padding-bottom: 20px;\n}\n.show .post .tags .tag[data-v-a23480f4] {\n  background-color: #8d42eb;\n  color: white;\n  padding: 5px 10px;\n  border-radius: 10px;\n  margin-right: 5px;\n  text-decoration: none;\n}\n.show .post .description[data-v-a23480f4] {\n  font-size: 22px;\n}", ""]);
+exports.push([module.i, ".show[data-v-a23480f4] {\n  background-color: #f2f5fb;\n  color: #4f5a64;\n  height: calc(100% - 160px);\n  text-align: center;\n  padding: 50px 0;\n}\n.show .post[data-v-a23480f4] {\n  border: 1px solid #8d42eb;\n  border-radius: 10px;\n  background-color: white;\n  padding: 30px 45px;\n}\n.show .post .cover[data-v-a23480f4] {\n  padding-bottom: 20px;\n}\n.show .post .cover img[data-v-a23480f4] {\n  border-radius: 10px;\n  padding: 20px;\n}\n.show .post .title[data-v-a23480f4] {\n  font-size: 45px;\n  text-transform: uppercase;\n  padding-bottom: 20px;\n}\n.show .post .category[data-v-a23480f4] {\n  padding-bottom: 20px;\n  font-size: 20px;\n}\n.show .post .category .icon[data-v-a23480f4] {\n  color: #8d42eb;\n}\n.show .post .tags[data-v-a23480f4] {\n  padding-bottom: 20px;\n}\n.show .post .tags .tag[data-v-a23480f4] {\n  background-color: #8d42eb;\n  color: white;\n  padding: 5px 10px;\n  border-radius: 10px;\n  margin-right: 5px;\n  text-decoration: none;\n}\n.show .post .description[data-v-a23480f4] {\n  font-size: 22px;\n}", ""]);
 
 // exports
 
@@ -4055,6 +4061,10 @@ var render = function () {
               ),
             ]),
             _vm._v(" "),
+            _c("div", { staticClass: "post-cover" }, [
+              _c("img", { attrs: { src: post.cover, alt: post.title } }),
+            ]),
+            _vm._v(" "),
             _c(
               "div",
               { staticClass: "link" },
@@ -4495,6 +4505,10 @@ var render = function () {
   return _c("div", { staticClass: "show" }, [
     _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "post" }, [
+        _c("div", { staticClass: "cover" }, [
+          _c("img", { attrs: { src: _vm.post.cover, alt: _vm.post.title } }),
+        ]),
+        _vm._v(" "),
         _c("div", { staticClass: "title" }, [
           _vm._v(
             "\n                " + _vm._s(_vm.post.title) + "\n            "

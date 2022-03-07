@@ -19,6 +19,9 @@
                     <div class="post-description">
                         {{truncateText(post.description, 110)}}
                     </div>
+                    <div class="post-cover">
+                        <img :src="post.cover" :alt="post.title">
+                    </div>
                     <div class="link">
                         <router-link class="link-to" :to="{name: 'show', params: {slug: post.slug}}">
                             Scopri il piatto
@@ -137,6 +140,14 @@ background-color: #f2f5fb;
                 .post-description{
                     font-size: 16px;
                     padding-bottom: 20px;
+                }
+
+                .post-cover{
+                    padding-bottom: 20px;
+
+                    img{
+                        border-radius: 10px;
+                    }
                 }
 
                 .link{

@@ -13,22 +13,18 @@ main{
             .single-post{
                 width: calc((100% / 3) - 40px);
                 margin: 20px 20px;
-                border: 1px solid #3490dc;
+                border: 1px solid;
                 border-radius: 10px;
                 padding: 10px;
     
-                a{
-                    text-decoration: none;
-    
-                    .post-title{
-                        font-weight: 700;
-                        font-size: 25px;
-                        margin-bottom: 15px;
-                    }
-    
-                    // .post-description{
-                        
-                    // }
+                .post-title{
+                    font-weight: 700;
+                    font-size: 25px;
+                    margin-bottom: 15px;
+                }
+
+                .post-cover{
+                    margin: 10px 0;
                 }
             }
         }
