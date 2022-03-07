@@ -5,7 +5,7 @@
                 <div class="title">
                     {{post.title}}
                 </div>
-                <div class="category">
+                <div v-if="post.category" class="category">
                     Categoria: {{post.category.name}}
                     <span class="icon" v-if="post.category.name === 'Dolce'">
                         <i class="fas fa-ice-cream"></i>
@@ -26,12 +26,10 @@
                         <i class="fas fa-pizza-slice"></i>
                     </span>
                 </div>
-                <div v-if="post.tags.length > 0">
-                    <div class="tags">
-                        <span v-for="(tag, index) in post.tags" :key="index">
-                            {{tag.name}}
-                        </span>
-                    </div>
+                <div class="tags" v-if="post.tags && post.tags.length > 0">
+                    <router-link v-for="(tag, index) in post.tags" :key="index" class="tag" :to="{ name: 'tag-detail', params: {slug: tag.slug}}">
+                        {{tag.slug}}
+                    </router-link>
                 </div>
                 <div class="description">
                     {{post.description}}
@@ -46,7 +44,7 @@
         name: 'Show',
         data: function(){
             return {
-                post: [],
+                post: {},
             }
         },
         methods: {
@@ -55,7 +53,6 @@
                 .then((response) => {
                     if(response.data.success){
                         this.post = response.data.post;
-                        console.log(this.post);
                     } else{
                         this.$router.push({ name: 'not-found' });
                     }
@@ -100,11 +97,13 @@
         .tags{
             padding-bottom: 20px;
 
-            span{
+            .tag{
                 background-color: #8d42eb;
                 color: white;
                 padding: 5px 10px;
                 border-radius: 10px;
+                margin-right: 5px;
+                text-decoration: none;
             }
         }
 

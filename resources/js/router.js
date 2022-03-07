@@ -8,6 +8,7 @@ import About from './pages/About.vue';
 import Blog from './pages/Blog.vue';
 import NotFound from './pages/NotFound.vue';
 import Show from './pages/Show.vue';
+import TagDetail from './pages/TagDetail.vue';
 
 const router = new VueRouter({
     mode: "history",
@@ -31,6 +32,11 @@ const router = new VueRouter({
             path: "/blog/:slug",
             name: "show",
             component: Show
+        },
+        {
+            path: "/tags/:slug",
+            name: "tag-detail",
+            component: TagDetail
         },
         {
             path: "/*",
