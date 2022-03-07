@@ -9,6 +9,7 @@ import Blog from './pages/Blog.vue';
 import NotFound from './pages/NotFound.vue';
 import Show from './pages/Show.vue';
 import TagDetail from './pages/TagDetail.vue';
+import ContactUs from './pages/ContactUs.vue';
 
 const router = new VueRouter({
     mode: "history",
@@ -37,6 +38,11 @@ const router = new VueRouter({
             path: "/tags/:slug",
             name: "tag-detail",
             component: TagDetail
+        },
+        {
+            path: "/contact-us",
+            name: "contact-us",
+            component: ContactUs
         },
         {
             path: "/*",
