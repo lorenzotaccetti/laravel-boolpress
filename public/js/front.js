@@ -2256,8 +2256,6 @@ __webpack_require__.r(__webpack_exports__);
         email: this.email,
         message: this.message
       }).then(function (response) {
-        console.log('response');
-
         if (response.data.success) {
           _this.name = '', _this.email = '', _this.message = '', _this.success = true, _this.error = {};
         } else {

@@ -52,7 +52,6 @@
                     message: this.message,
                 })
                 .then((response) =>{
-                    console.log('response')
                     if (response.data.success) {
                         this.name = '',
                         this.email = '',
