@@ -22,10 +22,12 @@
         <div class="post-description">
             {{$post->description}}
         </div>
+        @if ($post->cover)
         <div class="post-cover">
             {{-- {{dd($post->cover)}} --}}
-            <img src="{{asset('storage/' . $post->cover)}}" alt="">
+            <img src="{{asset('storage/' . $post->cover)}}" alt="{{$post->title}}">
         </div>
+        @endif
         <div class="edit-button">
             <a href="{{route ('admin.posts.edit', ['post' => $post->id])}}">
                 Modifica il post

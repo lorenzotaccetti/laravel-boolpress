@@ -73,6 +73,20 @@
             </label>
             <textarea name="description" id="description" cols="30" rows="10">{{old('description', $post->description)}}</textarea>
 
+            <label for="cover">Aggiorna l'immagine del tuo post</label>
+            <input type="file" name="cover" id="cover">
+
+            @if ($post->cover)
+                <div class="image">
+                    <div>
+                        Immagine attuale:
+                    </div>
+                    <div>
+                        <img src="{{asset('storage/' . $post->cover)}}" alt="{{$post->title}}">
+                    </div>
+                </div>
+            @endif
+
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>

@@ -11026,6 +11026,10 @@ main .main-show .edit-button a {
   text-decoration: none;
 }
 
+main .main-show img {
+  max-width: 500px;
+}
+
 main .main-show .delete-button button {
   padding: 8px;
   font-size: 18px;
@@ -11107,5 +11111,14 @@ main .main-edit form .tags-area .check {
 
 main .main-edit form textarea {
   margin-bottom: 20px;
+}
+
+main .main-edit form .image {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+main .main-edit form .image img {
+  max-width: 400px;
 }
 

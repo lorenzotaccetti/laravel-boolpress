@@ -131,6 +131,18 @@ class PostController extends Controller
             $form_data['slug'] = $this->getUniqueSlugFromTitle($form_data['title']);
         }
 
+        if ($form_data['cover']) {
+            
+            if ($update_post->cover) {
+                Storage::delete($update_post->cover);
+            }
+
+            $img_path = Storage::put('cover', $form_data['cover']);
+
+            $form_data['cover'] = $img_path;
+
+        }
+
         $update_post->update($form_data);
 
         if(isset($form_data['tags'])) {
