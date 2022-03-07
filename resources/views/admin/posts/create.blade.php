@@ -56,6 +56,9 @@
             </label>
             <textarea name="description" id="description" cols="30" rows="10">{{old('description')}}</textarea>
 
+            <label for="cover">Inserisci un'immagine per il tuo post</label>
+            <input type="file" name="cover" id="cover">
+
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>

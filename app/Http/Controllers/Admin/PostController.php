@@ -59,6 +59,13 @@ class PostController extends Controller
 
         $new_post->fill($form_data);
         $new_post->slug = $this->getUniqueSlugFromTitle($new_post->title);
+
+        if (isset($form_data['cover'])) {
+            $img_path = Storage::put('cover', $form_data['cover']);
+
+            $new_post->cover = $img_path;
+        }
+
         $new_post->save();
 
         if (isset($form_data['tags'])) {
@@ -156,7 +163,8 @@ class PostController extends Controller
         'title' => 'required|min:3|max:255',
         'description' => 'required|min:4|max:60000',
         'category_id' => 'exists:categories,id|nullable',
-        'tags' => 'exists:tags,id'
+        'tags' => 'exists:tags,id',
+        'cover' => 'image|max:512'
        ];
     }
 
