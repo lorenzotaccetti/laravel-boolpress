@@ -8,6 +8,7 @@ use App\Post;
 use Illuminate\Support\Str;
 use App\Category;
 use App\Tag;
+use Illuminate\Support\Facades\Storage;
 
 class PostController extends Controller
 {
