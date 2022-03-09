@@ -5,7 +5,7 @@
             <div v-if="success">Grazie per averci contattato, email inviata</div>
 
             <form action="">
-                <label for="name">Qual è il tuo nome?</label>
+                <label for="name">Come ti chiami?</label>
                 <input v-model="name" type="text" name="name" id="name">
 
                 <div v-if="errors.name">
@@ -19,7 +19,7 @@
                     <p v-for="(error, index) in errors.email" :key="index">{{ error }}</p>
                 </div>
 
-                <label for="message">Qual è il tuo messaggio?</label>
+                <label for="message">Come possiamo aiutarti?</label>
                 <textarea v-model="message" name="message" id="message" cols="40" rows="10"></textarea>
                 
                 <div v-if="errors.message">

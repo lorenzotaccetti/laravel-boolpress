@@ -4483,9 +4483,7 @@ var render = function () {
         : _vm._e(),
       _vm._v(" "),
       _c("form", { attrs: { action: "" } }, [
-        _c("label", { attrs: { for: "name" } }, [
-          _vm._v("Qual è il tuo nome?"),
-        ]),
+        _c("label", { attrs: { for: "name" } }, [_vm._v("Come ti chiami?")]),
         _vm._v(" "),
         _c("input", {
           directives: [
@@ -4554,7 +4552,7 @@ var render = function () {
           : _vm._e(),
         _vm._v(" "),
         _c("label", { attrs: { for: "message" } }, [
-          _vm._v("Qual è il tuo messaggio?"),
+          _vm._v("Come possiamo aiutarti?"),
         ]),
         _vm._v(" "),
         _c("textarea", {
